@@ -29,7 +29,7 @@ declare var AOS: any;
   ],
   template: `
     <app-header></app-header>
-    <main>
+    <main class="bg-void">
       <app-hero></app-hero>
       <app-about></app-about>
       <app-skills></app-skills>
@@ -46,22 +46,22 @@ export class AppComponent implements OnInit, AfterViewInit {
   title = 'Akashkumar Yadav | Backend Engineer';
 
   ngOnInit(): void {
-    // Initialize AOS when component initializes
     if (typeof AOS !== 'undefined') {
       AOS.init({
         duration: 800,
-        easing: 'ease-in-out',
+        easing: 'ease-out-cubic',
         once: true,
-        offset: 100
+        offset: 50,
+        delay: 0
       });
     }
   }
 
   ngAfterViewInit(): void {
-    // Refresh AOS after view is initialized
     if (typeof AOS !== 'undefined') {
-      AOS.refresh();
+      setTimeout(() => {
+        AOS.refresh();
+      }, 500);
     }
   }
 }
-
