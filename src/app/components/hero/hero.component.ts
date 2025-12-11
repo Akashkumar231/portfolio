@@ -54,7 +54,7 @@ import { CommonModule } from '@angular/common';
             </svg>
           </a>
           <a
-            href="/assets/Akashkumar_Resume.pdf"
+            href="assets/Akashkumar_Resume.pdf"
             download="Akashkumar_Resume.pdf"
             class="btn-outline flex items-center gap-2 group">
             <svg class="w-5 h-5 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
