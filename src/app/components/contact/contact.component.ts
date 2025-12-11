@@ -161,7 +161,7 @@ import emailjs from '@emailjs/browser';
               <div class="flex items-center gap-3">
                 <div class="w-3 h-3 bg-neon-green rounded-full animate-pulse"></div>
                 <p class="text-silver">
-                  <span class="text-pearl font-medium">Available</span> for freelance projects and full-time opportunities
+                  <span class="text-pearl font-medium">Available</span> for full-time opportunities
                 </p>
               </div>
             </div>
